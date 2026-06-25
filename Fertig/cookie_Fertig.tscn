@@ -2,6 +2,15 @@
 
 [ext_resource type="PackedScene" uid="uid://bnfihmsvkwg7v" path="res://Objekte_Levelnew folder/1cookie.tscn" id="1_o1fak"]
 
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jcvd4"]
+height = 0.21746826
+
 [node name="Node3D" type="Node3D" unique_id=1068985352]
 
 [node name="cookie" parent="." unique_id=603895000 instance=ExtResource("1_o1fak")]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1952987570 groups=["cookie"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.18771362, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=437028981]
+shape = SubResource("CylinderShape3D_jcvd4")

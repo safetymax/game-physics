@@ -4,6 +4,8 @@ extends CharacterBody3D
 const SPEED = 2.0
 const JUMP_VELOCITY = 4.5
 
+var has_cookie: bool = false
+
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -26,3 +28,13 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func _ready():
+	for area in get_tree().get_nodes_in_group("cookie"):
+		area.body_entered.connect(_on_cookie_body_entered)
+		print("Connected to cookie area: ", area.name)
+
+
+func _on_cookie_body_entered(body):
+	if body == self:
+		has_cookie = true
