@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://tcqrifduc42e"]
+
+[ext_resource type="PackedScene" uid="uid://bbu5ml0gm24mc" path="res://Texturen/animal-cat.fbx" id="1_c0oou"]
+[ext_resource type="Texture2D" uid="uid://d3qhfyhil54s" path="res://Texturen/colormap.png" id="2_ibsk1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xl5iq"]
+albedo_texture = ExtResource("2_ibsk1")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_68eox"]
+albedo_texture = ExtResource("2_ibsk1")
+
+[node name="animal-cat" unique_id=818938681 instance=ExtResource("1_c0oou")]
+
+[node name="body" parent="animal-cat/root" parent_id_path=PackedInt32Array(1813875942) index="0" unique_id=669365569]
+material_override = SubResource("StandardMaterial3D_xl5iq")
+
+[node name="Group" parent="animal-cat/root/body" index="0" unique_id=2135763984]
+surface_material_override/0 = SubResource("StandardMaterial3D_68eox")
+
+[node name="tail" parent="animal-cat/root/body" index="1" unique_id=64052227]
+surface_material_override/0 = SubResource("StandardMaterial3D_68eox")
+
+[node name="leg-back-left" parent="animal-cat/root" parent_id_path=PackedInt32Array(1813875942) index="1" unique_id=1407566083]
+surface_material_override/0 = SubResource("StandardMaterial3D_68eox")
+
+[node name="leg-back-right" parent="animal-cat/root" parent_id_path=PackedInt32Array(1813875942) index="2" unique_id=902522840]
+surface_material_override/0 = SubResource("StandardMaterial3D_68eox")
+
+[node name="leg-front-left" parent="animal-cat/root" parent_id_path=PackedInt32Array(1813875942) index="3" unique_id=1586440217]
+surface_material_override/0 = SubResource("StandardMaterial3D_68eox")
+
+[node name="leg-front-right" parent="animal-cat/root" parent_id_path=PackedInt32Array(1813875942) index="4" unique_id=1104512280]
+surface_material_override/0 = SubResource("StandardMaterial3D_68eox")
