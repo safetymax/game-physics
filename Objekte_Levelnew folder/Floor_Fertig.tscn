@@ -9,6 +9,8 @@ size = Vector3(4.114807, 0.121520996, 3.7363281)
 
 [node name="template-floor" parent="." unique_id=1823962085 instance=ExtResource("1_g3dej")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="template-floor" unique_id=678944792]
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1201009314]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=678944792]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.021827638, -0.04989624, 0.2939453)
 shape = SubResource("BoxShape3D_fkba7")
