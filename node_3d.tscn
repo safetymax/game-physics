@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cn0ax0186ecm" path="res://Player.tscn" id="2_a0tk4"]
 [ext_resource type="PackedScene" uid="uid://bgjn1ef7cwhde" path="res://Objekte_Levelnew folder/Floor_Fertig.tscn" id="3_r3fl7"]
 [ext_resource type="PackedScene" uid="uid://b00r7ryetsesc" path="res://Objekte_Levelnew folder/Wand_Fertig.tscn" id="4_jka67"]
+[ext_resource type="Script" uid="uid://dnpbjhv68772j" path="res://camera_3d.gd" id="5_jka67"]
 
 [node name="Node3D" type="Node3D" unique_id=919008151]
 
@@ -38,3 +39,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3753701, 0, -1.3366283)
 
 [node name="4" type="Node3D" parent="Path1" unique_id=1918686540]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4301827, 0, -1.5180023)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=118033932 node_paths=PackedStringArray("player")]
+transform = Transform3D(1, 0, 0, 0, 0.1386546, 0.9903408, 0, -0.9903408, 0.1386546, 0, 1.9992914, 0)
+script = ExtResource("5_jka67")
+player = NodePath("../Player")
