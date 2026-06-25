@@ -221,7 +221,7 @@ transform = Transform3D(-6.5567085e-09, 0, 0.15, 0, 0.15, 0, -0.15, 0, -6.556708
 [node name="Wand63" parent="WandObjekte" unique_id=611261049 instance=ExtResource("4_jka67")]
 transform = Transform3D(-6.5567085e-09, 0, 0.15, 0, 0.15, 0, -0.15, 0, -6.5567085e-09, -0.7336043, 0, -0.36718154)
 
-[node name="Player" parent="." unique_id=1974062379 instance=ExtResource("2_a0tk4")]
+[node name="Player" parent="." unique_id=1974062379 groups=["player"] instance=ExtResource("2_a0tk4")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.6694732, 0.30197006, 1.5862286)
 
 [node name="Enemy" parent="." unique_id=565029361 node_paths=PackedStringArray("path", "player") instance=ExtResource("1_noarx")]
@@ -248,8 +248,8 @@ transform = Transform3D(1, 0, 0, 0, 0.1386546, 0.9903408, 0, -0.9903408, 0.13865
 script = ExtResource("5_jka67")
 player = NodePath("../Player")
 
-[node name="Plate" parent="." unique_id=1443240082 instance=ExtResource("6_wc5p8")]
+[node name="Plate" parent="." unique_id=1443240082 groups=["plate"] instance=ExtResource("6_wc5p8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68871665, 0.010864258, -0.6898906)
 
-[node name="Cookie" parent="." unique_id=1068985352 groups=["cookie"] instance=ExtResource("7_jsk3o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.53267384, 0.010864139, 0.48175383)
+[node name="Cookie" parent="." unique_id=1068985352 instance=ExtResource("7_jsk3o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.53267384, 0.010864139, 1.1831923)

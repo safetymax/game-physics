@@ -4,7 +4,7 @@ extends CharacterBody3D
 const SPEED = 2.0
 const JUMP_VELOCITY = 4.5
 
-var has_cookie: bool = false
+var cookies: int = 0
 
 
 func _physics_process(delta: float) -> void:
@@ -31,10 +31,14 @@ func _physics_process(delta: float) -> void:
 
 func _ready():
 	for area in get_tree().get_nodes_in_group("cookie"):
-		area.body_entered.connect(_on_cookie_body_entered)
-		print("Connected to cookie area: ", area.name)
+		if area is Area3D:
+			area.body_entered.connect(_on_cookie_body_entered.bind(area))
+			print("Connected to cookie area: ", area.name)
 
 
-func _on_cookie_body_entered(body):
+func _on_cookie_body_entered(body, cookie):
 	if body == self:
-		has_cookie = true
+		cookies += 1
+		print("Player has collected: ", cookies, " cookies.")
+
+		cookie.get_parent().queue_free()  # Remove the cookie from the scene
