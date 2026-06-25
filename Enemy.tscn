@@ -14,3 +14,11 @@ script = ExtResource("1_tt7e2")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=874306304]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.92746365, 0.086376846)
 shape = SubResource("CapsuleShape3D_fkba7")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1352472133]
+transform = Transform3D(-0.9999888, 0.0016611064, -0.0044441232, 0.0016742905, 0.9999942, -0.0029662643, 0.0044391677, -0.0029736673, -0.99998575, 0, 0, 0)
+light_color = Color(1, 0.80784315, 0.4392157, 1)
+light_energy = 10.0
+light_volumetric_fog_energy = 2.0
+spot_range = 6.0
+spot_angle = 35.0
