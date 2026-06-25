@@ -43,10 +43,11 @@ func _physics_process(delta: float) -> void:
 	#look for player: raycast from enemy to player, if angle between enemy forward and player is less than 75 degrees, and distance is less than 10, then print("player detected")
 	#find player node in the scene tree
 	#var player = get_tree().get_root().get_node("Player")
+	var enemy_forward = global_transform.basis.z
 	var to_player = player.global_transform.origin - global_transform.origin
+	var angle = rad_to_deg(enemy_forward.angle_to(to_player.normalized()))
 	if to_player.length() < 10.0:
-		var angle = rad_to_deg(acos(forward.normalized().dot(to_player.normalized())))
-		if angle < 75.0:
+		if abs(angle) < 30.0:
 			#cast a ray from enemy to player, if it hits the player, then print("player detected")
 			var space_state = get_world_3d().direct_space_state
 			# use global coordinates, not local to node
