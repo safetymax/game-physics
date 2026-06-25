@@ -268,3 +268,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6784387, 0.010864139, -0.30
 
 [node name="Cookie2" parent="." unique_id=295405091 instance=ExtResource("7_jsk3o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4160819, 0.010864139, 0.15148509)
+
+[node name="Enemy2" parent="." unique_id=618602596 node_paths=PackedStringArray("path", "player") instance=ExtResource("1_noarx")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0.57015276, 0.010864258, -0.9540562)
+path = [NodePath("../Path2/1"), NodePath("../Path2/2"), NodePath("../Path2/3"), NodePath("../Path2/2")]
+player = NodePath("../Player")
+
+[node name="Path2" type="Node" parent="." unique_id=91841367]
+
+[node name="1" type="Node3D" parent="Path2" unique_id=88545320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6572447, 0, -1.0490817)
+
+[node name="2" type="Node3D" parent="Path2" unique_id=395324909]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.562551, 0, -1.0490817)
+
+[node name="3" type="Node3D" parent="Path2" unique_id=793071050]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5473466, 0, 1.1631124)
