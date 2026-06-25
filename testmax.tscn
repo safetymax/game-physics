@@ -13,8 +13,22 @@ size = Vector3(2.930603, 0.09423828, 3.793518)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1025151298]
 transform = Transform3D(1, 0, 0, 0, 0.52774173, 0.84940493, 0, -0.84940493, 0.52774173, -0.3417821, 0.9714134, 0.047629476)
 
-[node name="Enemy" parent="." unique_id=565029361 instance=ExtResource("1_pxjho")]
+[node name="Enemy" parent="." unique_id=565029361 node_paths=PackedStringArray("path") instance=ExtResource("1_pxjho")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8983896, 0)
+path = [NodePath("../Path1/Node3D"), NodePath("../Path1/Node3D2"), NodePath("../Path1/Node3D3"), NodePath("../Path1/Node3D4")]
 
 [node name="Player" parent="." unique_id=2030252105 instance=ExtResource("2_7c2vb")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1092635, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.043653, 0)
+
+[node name="Path1" type="Node3D" parent="." unique_id=1018662975]
+
+[node name="Node3D2" type="Node3D" parent="Path1" unique_id=2016635821]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2.182627)
+
+[node name="Node3D" type="Node3D" parent="Path1" unique_id=1195683991]
+
+[node name="Node3D4" type="Node3D" parent="Path1" unique_id=162260466]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4314014, 0, -1.0744596)
+
+[node name="Node3D3" type="Node3D" parent="Path1" unique_id=1760528237]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4314014, 0, 0)

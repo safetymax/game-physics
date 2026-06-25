@@ -1,14 +1,16 @@
 [gd_scene format=3 uid="uid://c5epwy4l8aqvv"]
 
-[ext_resource type="PackedScene" uid="uid://otjp3vbhq45r" path="res://Texturen/animal-lion.fbx" id="1_tt7e2"]
+[ext_resource type="Script" uid="uid://celg65wdhytwk" path="res://enemy_move.gd" id="1_tt7e2"]
+[ext_resource type="PackedScene" uid="uid://otjp3vbhq45r" path="res://Texturen/animal-lion.fbx" id="2_s7bn3"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fkba7"]
 height = 1.5063477
 
 [node name="CharacterBody3D2" type="CharacterBody3D" unique_id=565029361]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+script = ExtResource("1_tt7e2")
 
-[node name="animal-lion" parent="." unique_id=1104130311 instance=ExtResource("1_tt7e2")]
+[node name="animal-lion" parent="." unique_id=1104130311 instance=ExtResource("2_s7bn3")]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=874306304]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.92746365, 0.086376846)
