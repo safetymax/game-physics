@@ -1,3 +1,14 @@
 [gd_scene format=3 uid="uid://c5epwy4l8aqvv"]
 
+[ext_resource type="PackedScene" uid="uid://otjp3vbhq45r" path="res://Texturen/animal-lion.fbx" id="1_tt7e2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_fkba7"]
+height = 1.5063477
+
 [node name="CharacterBody3D2" type="CharacterBody3D" unique_id=565029361]
+
+[node name="animal-lion" parent="." unique_id=1104130311 instance=ExtResource("1_tt7e2")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=874306304]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.92746365, 0.086376846)
+shape = SubResource("CapsuleShape3D_fkba7")

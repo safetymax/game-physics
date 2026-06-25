@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bbu5ml0gm24mc"
-path="res://.godot/imported/animal-cat.fbx-857c420be4994cf4d9266dcfec4b38e1.scn"
+uid="uid://otjp3vbhq45r"
+path="res://.godot/imported/animal-lion.fbx-ce90bc2fb84f3e583d34e5c251c7e506.scn"
 
 [deps]
 
-source_file="res://Texturen/animal-cat.fbx"
-dest_files=["res://.godot/imported/animal-cat.fbx-857c420be4994cf4d9266dcfec4b38e1.scn"]
+source_file="res://Texturen/animal-lion.fbx"
+dest_files=["res://.godot/imported/animal-lion.fbx-ce90bc2fb84f3e583d34e5c251c7e506.scn"]
 
 [params]
 
