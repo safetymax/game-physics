@@ -5,6 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://bgjn1ef7cwhde" path="res://Fertig/Floor_Fertig.tscn" id="3_r3fl7"]
 [ext_resource type="PackedScene" uid="uid://b00r7ryetsesc" path="res://Fertig/Wand_Fertig.tscn" id="4_jka67"]
 [ext_resource type="Script" uid="uid://dnpbjhv68772j" path="res://camera_3d.gd" id="5_jka67"]
+[ext_resource type="PackedScene" uid="uid://b21ugy8km8kip" path="res://Fertig/Plate_Fertig.tscn" id="6_wc5p8"]
+[ext_resource type="PackedScene" uid="uid://doc8bpbvtpii8" path="res://Fertig/cookie_Fertig.tscn" id="7_jsk3o"]
 
 [node name="Node3D" type="Node3D" unique_id=919008151]
 
@@ -245,3 +247,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4301827, 0, -1.5180023)
 transform = Transform3D(1, 0, 0, 0, 0.1386546, 0.9903408, 0, -0.9903408, 0.1386546, 0, 1.9992914, 0)
 script = ExtResource("5_jka67")
 player = NodePath("../Player")
+
+[node name="Plate" parent="." unique_id=1443240082 instance=ExtResource("6_wc5p8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68871665, 0.010864258, -0.6898906)
+
+[node name="Cookie" parent="." unique_id=1068985352 groups=["cookie"] instance=ExtResource("7_jsk3o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.53267384, 0.010864139, 0.48175383)
