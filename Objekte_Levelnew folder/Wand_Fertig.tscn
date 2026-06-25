@@ -10,6 +10,8 @@ transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
 
 [node name="template-wall2" parent="." unique_id=2050698702 instance=ExtResource("1_88e21")]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="template-wall2" unique_id=1084890253]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029907227, 2.1325073, 0)
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=245288349]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1084890253]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, -0.029907223, 2.132507, 0)
 shape = SubResource("BoxShape3D_jlkki")
