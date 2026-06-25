@@ -18,7 +18,23 @@ transform = Transform3D(1, 0, 0, 0, 0.52774173, 0.84940493, 0, -0.84940493, 0.52
 transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0.59142643, 0, 0)
 
 [node name="Player" parent="." unique_id=1974062379 instance=ExtResource("2_a0tk4")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.049525335, 0)
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.19540389, 0)
 
-[node name="Enemy" parent="." unique_id=565029361 instance=ExtResource("1_noarx")]
+[node name="Enemy" parent="." unique_id=565029361 node_paths=PackedStringArray("path", "player") instance=ExtResource("1_noarx")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.048178554, 0.5325965)
+path = [NodePath("../Path1/1"), NodePath("../Path1/2"), NodePath("../Path1/3"), NodePath("../Path1/4")]
+player = NodePath("../Player")
+
+[node name="Path1" type="Node" parent="." unique_id=463178368]
+
+[node name="1" type="Node3D" parent="Path1" unique_id=2028515876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6020076, 0, 1.5748222)
+
+[node name="2" type="Node3D" parent="Path1" unique_id=1570549363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4283834, 0, 1.5219976)
+
+[node name="3" type="Node3D" parent="Path1" unique_id=1706555330]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3753701, 0, -1.3366283)
+
+[node name="4" type="Node3D" parent="Path1" unique_id=1918686540]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4301827, 0, -1.5180023)
