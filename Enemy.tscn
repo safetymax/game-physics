@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://c5epwy4l8aqvv"]
 
+[ext_resource type="Script" uid="uid://celg65wdhytwk" path="res://enemy_move.gd" id="1_tt7e2"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tt7e2"]
+height = 1.5493164
+
 [node name="CharacterBody3D2" type="CharacterBody3D" unique_id=565029361]
+script = ExtResource("1_tt7e2")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=916681797]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=509749306]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2253418, 0)
+shape = SubResource("CapsuleShape3D_tt7e2")
