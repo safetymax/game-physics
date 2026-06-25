@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://uc1q07r5ev12"]
+
+[ext_resource type="PackedScene" uid="uid://bn3vfpulpwo7r" path="res://1gate_door.tscn" id="1_ttpin"]
+
+[node name="Node3D" type="Node3D" unique_id=786431602]
+
+[node name="gate-door" parent="." unique_id=1225409445 instance=ExtResource("1_ttpin")]

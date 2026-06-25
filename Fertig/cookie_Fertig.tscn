@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://doc8bpbvtpii8"]
+
+[ext_resource type="PackedScene" uid="uid://bnfihmsvkwg7v" path="res://Objekte_Levelnew folder/1cookie.tscn" id="1_o1fak"]
+
+[node name="Node3D" type="Node3D" unique_id=1068985352]
+
+[node name="cookie" parent="." unique_id=603895000 instance=ExtResource("1_o1fak")]

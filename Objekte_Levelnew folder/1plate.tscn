@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bim4bbcscsc6o"]
+
+[ext_resource type="PackedScene" uid="uid://c821niuxmmc3i" path="res://Texturen/plate.fbx" id="1_oxlxi"]
+[ext_resource type="Texture2D" uid="uid://pmq8n2ut55hj" path="res://Texturen/colormap_Food.png" id="2_18e3q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oxlxi"]
+albedo_texture = ExtResource("2_18e3q")
+
+[node name="plate" unique_id=1001313760 instance=ExtResource("1_oxlxi")]
+
+[node name="plate" parent="." index="0" unique_id=267600492]
+surface_material_override/0 = SubResource("StandardMaterial3D_oxlxi")

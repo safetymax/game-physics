@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://c5epwy4l8aqvv" path="res://Enemy.tscn" id="1_noarx"]
 [ext_resource type="PackedScene" uid="uid://cn0ax0186ecm" path="res://Player.tscn" id="2_a0tk4"]
-[ext_resource type="PackedScene" uid="uid://bgjn1ef7cwhde" path="res://Objekte_Levelnew folder/Floor_Fertig.tscn" id="3_r3fl7"]
-[ext_resource type="PackedScene" uid="uid://b00r7ryetsesc" path="res://Objekte_Levelnew folder/Wand_Fertig.tscn" id="4_jka67"]
+[ext_resource type="PackedScene" uid="uid://bgjn1ef7cwhde" path="res://Fertig/Floor_Fertig.tscn" id="3_r3fl7"]
+[ext_resource type="PackedScene" uid="uid://b00r7ryetsesc" path="res://Fertig/Wand_Fertig.tscn" id="4_jka67"]
 [ext_resource type="Script" uid="uid://dnpbjhv68772j" path="res://camera_3d.gd" id="5_jka67"]
 
 [node name="Node3D" type="Node3D" unique_id=919008151]
