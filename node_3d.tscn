@@ -164,6 +164,9 @@ transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, 
 [node name="Wand44" parent="WandObjekte" unique_id=1612579684 instance=ExtResource("4_jka67")]
 transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, -0.15, -0.6015521, 0, -1.4563656)
 
+[node name="Wand69" parent="WandObjekte" unique_id=1163772335 instance=ExtResource("4_jka67")]
+transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, -0.15, -1.1407353, 0, -1.4563656)
+
 [node name="Wand49" parent="WandObjekte" unique_id=171411520 instance=ExtResource("4_jka67")]
 transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, -0.15, -0.036488175, 0, 0.8314531)
 
@@ -249,7 +252,10 @@ script = ExtResource("5_jka67")
 player = NodePath("../Player")
 
 [node name="Plate" parent="." unique_id=1443240082 groups=["plate"] instance=ExtResource("6_wc5p8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.68871665, 0.010864258, -0.6898906)
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.6696112, 0.010864258, -1.6853065)
 
 [node name="Cookie" parent="." unique_id=1068985352 instance=ExtResource("7_jsk3o")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.53267384, 0.010864139, 1.1831923)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6784387, 0.010864139, -0.30993152)
+
+[node name="Cookie2" parent="." unique_id=295405091 instance=ExtResource("7_jsk3o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4160819, 0.010864139, 0.15148509)
