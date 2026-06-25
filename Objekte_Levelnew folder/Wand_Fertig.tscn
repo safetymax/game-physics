@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b00r7ryetsesc"]
+
+[ext_resource type="PackedScene" uid="uid://buoq3ggd85kns" path="res://Objekte_Levelnew folder/template_wall.tscn" id="1_88e21"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jlkki"]
+size = Vector3(3.3166504, 4.0238037, 1)
+
+[node name="Node3D" type="Node3D" unique_id=557242620]
+
+[node name="template-wall2" parent="." unique_id=2050698702 instance=ExtResource("1_88e21")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="template-wall2" unique_id=1084890253]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.029907227, 2.1325073, 0)
+shape = SubResource("BoxShape3D_jlkki")

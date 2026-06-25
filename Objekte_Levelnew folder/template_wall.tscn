@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://buoq3ggd85kns"]
+
+[ext_resource type="PackedScene" uid="uid://brsf7txg050gl" path="res://Texturen/template-wall.fbx" id="1_n81ff"]
+[ext_resource type="Texture2D" uid="uid://blaweyy2gnjxs" path="res://Texturen/colormap_Wall.png" id="2_t57tg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4rfbp"]
+albedo_texture = ExtResource("2_t57tg")
+
+[node name="template-wall" unique_id=2050698702 instance=ExtResource("1_n81ff")]
+
+[node name="template-wall" parent="." index="0" unique_id=947975810]
+surface_material_override/0 = SubResource("StandardMaterial3D_4rfbp")

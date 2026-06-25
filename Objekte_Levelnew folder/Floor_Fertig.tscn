@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bgjn1ef7cwhde"]
+
+[ext_resource type="PackedScene" uid="uid://t58b24v8ii8g" path="res://Objekte_Levelnew folder/template_floor.tscn" id="1_g3dej"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_fkba7"]
+
+[node name="Node3D" type="Node3D" unique_id=652466146]
+
+[node name="template-floor" parent="." unique_id=1823962085 instance=ExtResource("1_g3dej")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=678944792]
+shape = SubResource("BoxShape3D_fkba7")
