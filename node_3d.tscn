@@ -118,10 +118,10 @@ transform = Transform3D(-6.5567085e-09, 0, -0.15, 0, 0.15, 0, 0.15, 0, -6.556708
 transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, -0.15, -1.7422521, 0, -2.015057)
 
 [node name="Wand57" parent="WandObjekte" unique_id=800054701 instance=ExtResource("4_jka67")]
-transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, -0.15, -1.7422521, 0, -0.1728574)
+transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, -0.15, -1.6787963, 0, -0.1728574)
 
 [node name="Wand58" parent="WandObjekte" unique_id=1039166356 instance=ExtResource("4_jka67")]
-transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, -0.15, -1.1727017, 0, -0.1728574)
+transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, -0.15, -1.1059059, 0, -0.1728574)
 
 [node name="Wand67" parent="WandObjekte" unique_id=77810353 instance=ExtResource("4_jka67")]
 transform = Transform3D(-0.15, 0, -1.3113417e-08, 0, 0.15, 0, 1.3113417e-08, 0, -0.15, -0.39087045, 0, 0.28134933)
