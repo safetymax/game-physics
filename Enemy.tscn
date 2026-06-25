@@ -6,6 +6,7 @@
 height = 1.5063477
 
 [node name="CharacterBody3D2" type="CharacterBody3D" unique_id=565029361]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 
 [node name="animal-lion" parent="." unique_id=1104130311 instance=ExtResource("1_tt7e2")]
 
