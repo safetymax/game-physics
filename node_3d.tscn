@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://c5epwy4l8aqvv" path="res://Enemy.tscn" id="1_noarx"]
 [ext_resource type="PackedScene" uid="uid://cn0ax0186ecm" path="res://Player.tscn" id="2_a0tk4"]
+[ext_resource type="PackedScene" uid="uid://bgjn1ef7cwhde" path="res://Objekte_Levelnew folder/Floor_Fertig.tscn" id="3_r3fl7"]
+[ext_resource type="PackedScene" uid="uid://b00r7ryetsesc" path="res://Objekte_Levelnew folder/Wand_Fertig.tscn" id="4_jka67"]
 
 [node name="Node3D" type="Node3D" unique_id=919008151]
 
@@ -18,3 +20,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70629656, 0)
 
 [node name="Player" parent="." unique_id=2030252105 instance=ExtResource("2_a0tk4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1092635, 0)
+
+[node name="WandObjekte" type="Node3D" parent="." unique_id=1038765026]
+
+[node name="Boden" parent="WandObjekte" unique_id=652466146 instance=ExtResource("3_r3fl7")]
+
+[node name="Wand" parent="WandObjekte" unique_id=557242620 instance=ExtResource("4_jka67")]
