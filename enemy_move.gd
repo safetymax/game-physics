@@ -46,7 +46,7 @@ func _physics_process(delta: float) -> void:
 	var enemy_forward = global_transform.basis.z
 	var to_player = player.global_transform.origin - global_transform.origin
 	var angle = rad_to_deg(enemy_forward.angle_to(to_player.normalized()))
-	if to_player.length() < 10.0:
+	if to_player.length() < 2.0:
 		if abs(angle) < 30.0:
 			#cast a ray from enemy to player, if it hits the player, then print("player detected")
 			var space_state = get_world_3d().direct_space_state
