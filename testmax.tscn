@@ -13,9 +13,10 @@ size = Vector3(2.930603, 0.09423828, 3.793518)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1025151298]
 transform = Transform3D(1, 0, 0, 0, 0.52774173, 0.84940493, 0, -0.84940493, 0.52774173, -0.3417821, 0.9714134, 0.047629476)
 
-[node name="Enemy" parent="." unique_id=565029361 node_paths=PackedStringArray("path") instance=ExtResource("1_pxjho")]
+[node name="Enemy" parent="." unique_id=565029361 node_paths=PackedStringArray("path", "player") instance=ExtResource("1_pxjho")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8983896, 0)
 path = [NodePath("../Path1/Node3D"), NodePath("../Path1/Node3D2"), NodePath("../Path1/Node3D3"), NodePath("../Path1/Node3D4")]
+player = NodePath("../Player")
 
 [node name="Player" parent="." unique_id=2030252105 instance=ExtResource("2_7c2vb")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.043653, 0)

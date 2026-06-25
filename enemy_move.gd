@@ -10,6 +10,8 @@ var current_target_index: int = 0
 var arrived: bool = false
 var turn_timer: float = 0.0
 
+@export
+var player: Node3D
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -23,7 +25,7 @@ func _physics_process(delta: float) -> void:
 		current_target_index += 1
 		if current_target_index >= path.size():
 			current_target_index = 0
-	print ("current target index: ", current_target_index)
+	#print ("current target index: ", current_target_index)
 
 	if !arrived:
 		velocity = forward.normalized() * SPEED
@@ -37,5 +39,20 @@ func _physics_process(delta: float) -> void:
 		if turn_timer >= 4.0:
 			turn_timer = 0.0
 			arrived = false
+
+	#look for player: raycast from enemy to player, if angle between enemy forward and player is less than 75 degrees, and distance is less than 10, then print("player detected")
+	#find player node in the scene tree
+	#var player = get_tree().get_root().get_node("Player")
+	var to_player = player.global_transform.origin - global_transform.origin
+	if to_player.length() < 10.0:
+		var angle = rad_to_deg(acos(forward.normalized().dot(to_player.normalized())))
+		if angle < 75.0:
+			#cast a ray from enemy to player, if it hits the player, then print("player detected")
+			var space_state = get_world_3d().direct_space_state
+			# use global coordinates, not local to node
+			var query = PhysicsRayQueryParameters3D.create(global_transform.origin,player.global_transform.origin)
+			var result = space_state.intersect_ray(query)
+			if result and result.collider == player:
+				print("player detected")
 
 	move_and_slide()
