@@ -5,7 +5,8 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_jlkki"]
 size = Vector3(3.3166504, 4.0238037, 1)
 
-[node name="Node3D" type="Node3D" unique_id=557242620]
+[node name="Node3D2" type="Node3D" unique_id=557242620]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
 
 [node name="template-wall2" parent="." unique_id=2050698702 instance=ExtResource("1_88e21")]
 

@@ -7,22 +7,18 @@
 
 [node name="Node3D" type="Node3D" unique_id=919008151]
 
-[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=767314962]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5035095, -0.016925037, -0.91812134)
-use_collision = true
-size = Vector3(2.930603, 0.09423828, 3.793518)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1025151298]
 transform = Transform3D(1, 0, 0, 0, 0.52774173, 0.84940493, 0, -0.84940493, 0.52774173, -0.3417821, 0.9714134, 0.047629476)
-
-[node name="Enemy" parent="." unique_id=565029361 instance=ExtResource("1_noarx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.70629656, 0)
-
-[node name="Player" parent="." unique_id=2030252105 instance=ExtResource("2_a0tk4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1092635, 0)
 
 [node name="WandObjekte" type="Node3D" parent="." unique_id=1038765026]
 
 [node name="Boden" parent="WandObjekte" unique_id=652466146 instance=ExtResource("3_r3fl7")]
 
 [node name="Wand" parent="WandObjekte" unique_id=557242620 instance=ExtResource("4_jka67")]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0.59142643, 0, 0)
+
+[node name="Player" parent="." unique_id=1974062379 instance=ExtResource("2_a0tk4")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.049525335, 0)
+
+[node name="Enemy" parent="." unique_id=565029361 instance=ExtResource("1_noarx")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.048178554, 0.5325965)
