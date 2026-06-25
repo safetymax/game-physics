@@ -20,7 +20,7 @@ func _physics_process(delta: float) -> void:
 
 	#walk from node to node. at each node wait, turn 360 degrees, and then move to the next node. if at the end of the path, walk the path backwards
 	var forward = path[current_target_index].global_transform.origin - global_transform.origin
-	if forward.length() < 0.5:
+	if forward.length() < 0.1:
 		arrived = true
 		current_target_index += 1
 		if current_target_index >= path.size():

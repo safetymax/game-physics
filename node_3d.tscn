@@ -229,22 +229,31 @@ transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.6694732, 0.30197006, 
 
 [node name="Enemy" parent="." unique_id=565029361 node_paths=PackedStringArray("path", "player") instance=ExtResource("1_noarx")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0.048178554, 0.5325965)
-path = [NodePath("../Path1/1"), NodePath("../Path1/2"), NodePath("../Path1/3"), NodePath("../Path1/4")]
+path = [NodePath("../Path1/1"), NodePath("../Path1/2"), NodePath("../Path1/3"), NodePath("../Path1/4"), NodePath("../Path1/5"), NodePath("../Path1/6"), NodePath("../Path1/7"), NodePath("../Path1/6"), NodePath("../Path1/5"), NodePath("../Path1/4"), NodePath("../Path1/3"), NodePath("../Path1/2")]
 player = NodePath("../Player")
 
 [node name="Path1" type="Node" parent="." unique_id=463178368]
 
 [node name="1" type="Node3D" parent="Path1" unique_id=2028515876]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6020076, 0, 1.5748222)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.040032625, 0, -0.014003396)
 
 [node name="2" type="Node3D" parent="Path1" unique_id=1570549363]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4283834, 0, 1.5219976)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.037210464, 0, 0.579345)
 
 [node name="3" type="Node3D" parent="Path1" unique_id=1706555330]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3753701, 0, -1.3366283)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0572809, 0, 0.5638808)
+
+[node name="6" type="Node3D" parent="Path1" unique_id=333565806]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.737263, 0, 1.1727316)
+
+[node name="5" type="Node3D" parent="Path1" unique_id=1635970593]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7048554, 0, 0.17205477)
 
 [node name="4" type="Node3D" parent="Path1" unique_id=1918686540]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4301827, 0, -1.5180023)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0956929, 0, 0.086027384)
+
+[node name="7" type="Node3D" parent="Path1" unique_id=176179254]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.14843726, 0, 1.1727316)
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=118033932 node_paths=PackedStringArray("player")]
 transform = Transform3D(1, 0, 0, 0, 0.1386546, 0.9903408, 0, -0.9903408, 0.1386546, 0, 1.9992914, 0)
