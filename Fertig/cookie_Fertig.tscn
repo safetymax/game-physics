@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bnfihmsvkwg7v" path="res://Objekte_Levelnew folder/1cookie.tscn" id="1_o1fak"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_jcvd4"]
-height = 0.21746826
+height = 1.3617401
 
 [node name="Node3D2" type="Node3D" unique_id=1068985352]
 
@@ -13,4 +13,5 @@ height = 0.21746826
 transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0, 0.18771362, 0.005163014)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=437028981]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.15164948, 0)
 shape = SubResource("CylinderShape3D_jcvd4")
