@@ -6,6 +6,8 @@ const JUMP_VELOCITY = 4.5
 
 var cookies: int = 0
 
+@export
+var model: Node3D
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -26,6 +28,8 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 		velocity.z = move_toward(velocity.z, 0, SPEED)
+
+	model.rotation.y = atan2(-direction.x, -direction.z) + deg_to_rad(180)
 
 	move_and_slide()
 
