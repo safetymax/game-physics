@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="gamephysics"
-run/main_scene="uid://cp6m1m4mx1hhv"
+run/main_scene="uid://feqgy2648kv5"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
