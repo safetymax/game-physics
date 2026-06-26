@@ -351,27 +351,35 @@ surface_material_override/0 = SubResource("StandardMaterial3D_scmq3")
 surface_material_override/1 = SubResource("StandardMaterial3D_l0skt")
 
 [node name="door_1" parent="." index="5" unique_id=120351513]
+visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_qbmiv")
 
 [node name="door_2" parent="." index="6" unique_id=1325752808]
+visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_rsxjp")
 
 [node name="door_3" parent="." index="7" unique_id=1942030115]
+visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_wusml")
 
 [node name="door_4" parent="." index="8" unique_id=1498673072]
+visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_jtnpm")
 
 [node name="door_5" parent="." index="9" unique_id=1201603225]
+visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_u4t87")
 
 [node name="door_6" parent="." index="10" unique_id=1040206904]
+visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_y4kaw")
 
 [node name="door_7" parent="." index="11" unique_id=153439241]
+visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_ig8xe")
 
 [node name="door_8" parent="." index="12" unique_id=1671414572]
+visible = false
 surface_material_override/0 = SubResource("StandardMaterial3D_rm6wx")
 
 [node name="double_stand_1" parent="." index="13" unique_id=37677960]
