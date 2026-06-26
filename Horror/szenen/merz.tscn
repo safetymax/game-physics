@@ -21,3 +21,6 @@ texture_albedo = ExtResource("2_sh0tl")
 transform = Transform3D(1.0000005, -8.742286e-08, -8.7422826e-08, -7.699953e-08, -0.9936306, 0.11289343, -9.6733686e-08, -0.11289343, -0.9936306, 0.00038719169, -0.0042616515, 0.027917529)
 size = Vector3(0.02001709, 0.01, 0.05736824)
 texture_albedo = ExtResource("3_fic35")
+
+[node name="Sun" parent="." index="1" unique_id=1115811822]
+visible = false
