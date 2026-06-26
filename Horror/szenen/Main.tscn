@@ -2,13 +2,20 @@
 
 [ext_resource type="PackedScene" uid="uid://r5t1m0vymjf" path="res://Horror/szenen/flat.tscn" id="1_8vsp3"]
 [ext_resource type="PackedScene" uid="uid://bwhfs5hm545ss" path="res://Horror/player_horror.tscn" id="2_cilhk"]
+[ext_resource type="Script" uid="uid://cplibqrqks3dt" path="res://Horror/szenen/merz_move.gd" id="3_o0vex"]
 [ext_resource type="PackedScene" uid="uid://dn51rk48ixviw" path="res://Horror/szenen/merz.tscn" id="3_u1kt3"]
 
 [sub_resource type="Environment" id="Environment_lecut"]
+background_mode = 2
 background_energy_multiplier = 0.0
-ambient_light_source = 1
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 1, 1)
+ambient_light_sky_contribution = 0.0
 ambient_light_energy = 0.0
 reflected_light_source = 1
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xu2mj"]
+radius = 0.26953125
 
 [node name="Node3D" type="Node3D" unique_id=830319862]
 
@@ -19,8 +26,31 @@ reflected_light_source = 1
 [node name="PlayerHorror" parent="." unique_id=1002742844 instance=ExtResource("2_cilhk")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.6422395, 1.2941557, 2.6444685)
 
-[node name="Cartoon-Anime-4HeadBase" parent="." unique_id=668519801 instance=ExtResource("3_u1kt3")]
-transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=298433664]
 environment = SubResource("Environment_lecut")
+
+[node name="Path" type="Node" parent="." unique_id=1583295402]
+
+[node name="1" type="Node3D" parent="Path" unique_id=1464140679]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4748478, 0, 0)
+
+[node name="2" type="Node3D" parent="Path" unique_id=1982276325]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.094989, 0, 0)
+
+[node name="3" type="Node3D" parent="Path" unique_id=1271995746]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4262573, 0, 0)
+
+[node name="4" type="Node3D" parent="Path" unique_id=640854601]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2744371, 0, 4.1994925)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." unique_id=1254937728 node_paths=PackedStringArray("path", "player")]
+script = ExtResource("3_o0vex")
+path = [NodePath("../Path/1"), NodePath("../Path/2"), NodePath("../Path/3"), NodePath("../Path/4"), NodePath("../Path/3")]
+player = NodePath("../PlayerHorror")
+
+[node name="Cartoon-Anime-4HeadBase" parent="CharacterBody3D" unique_id=668519801 instance=ExtResource("3_u1kt3")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D" unique_id=1537806666]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.76439834, 0)
+shape = SubResource("CapsuleShape3D_xu2mj")
