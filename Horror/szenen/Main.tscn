@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://r5t1m0vymjf" path="res://Horror/szenen/flat.tscn" id="1_8vsp3"]
 [ext_resource type="PackedScene" uid="uid://bwhfs5hm545ss" path="res://Horror/player_horror.tscn" id="2_cilhk"]
+[ext_resource type="PackedScene" uid="uid://dn51rk48ixviw" path="res://Horror/szenen/merz.tscn" id="3_u1kt3"]
 
 [node name="Node3D" type="Node3D" unique_id=830319862]
 
@@ -11,3 +12,6 @@
 
 [node name="PlayerHorror" parent="." unique_id=1002742844 instance=ExtResource("2_cilhk")]
 transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.6422395, 1.2941557, 2.6444685)
+
+[node name="Cartoon-Anime-4HeadBase" parent="." unique_id=668519801 instance=ExtResource("3_u1kt3")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
