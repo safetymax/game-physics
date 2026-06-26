@@ -10,8 +10,16 @@ var current_target_index: int = 0
 var arrived: bool = false
 var turn_timer: float = 0.0
 
+var lights: Array[Node3D] = []
+
 @export
 var player: Node3D
+
+func _ready() -> void:
+	#load lights (children of the node "Lights")
+	for child in  get_node("/root/Node3D/Lights").get_children():
+		if child is Node3D:
+			lights.append(child)
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -55,5 +63,9 @@ func _physics_process(delta: float) -> void:
 			var result = space_state.intersect_ray(query)
 			if result and result.collider == player:
 				print("player detected")
+				#in all lights scripts turn variable "alarm_on" to true
+				for light in lights:
+					light.alarm_on = true
+
 
 	move_and_slide()

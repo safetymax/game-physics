@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://dnpbjhv68772j" path="res://camera_3d.gd" id="5_jka67"]
 [ext_resource type="PackedScene" uid="uid://b21ugy8km8kip" path="res://Fertig/Plate_Fertig.tscn" id="6_wc5p8"]
 [ext_resource type="PackedScene" uid="uid://doc8bpbvtpii8" path="res://Fertig/cookie_Fertig.tscn" id="7_jsk3o"]
+[ext_resource type="Script" uid="uid://cwd0tdc86qma4" path="res://alarm.gd" id="8_jsk3o"]
 
 [node name="Node3D" type="Node3D" unique_id=919008151]
 
@@ -284,3 +285,96 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.562551, 0, -1.0490817)
 
 [node name="3" type="Node3D" parent="Path2" unique_id=793071050]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5473466, 0, 1.1631124)
+
+[node name="Lights" type="Node" parent="." unique_id=983346590]
+
+[node name="Node3D" type="Node3D" parent="Lights" unique_id=1129139987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.309752, 0.5649698)
+script = ExtResource("8_jsk3o")
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lights/Node3D" unique_id=1607985829]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights/Node3D" unique_id=743283874]
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="Node3D2" type="Node3D" parent="Lights" unique_id=1300324640]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5747796, 0.309752, 0.022094607)
+script = ExtResource("8_jsk3o")
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lights/Node3D2" unique_id=1301273961]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights/Node3D2" unique_id=970219372]
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="Node3D3" type="Node3D" parent="Lights" unique_id=1269908979]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6042345, 0.309752, -1.0876848)
+script = ExtResource("8_jsk3o")
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lights/Node3D3" unique_id=1536905035]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights/Node3D3" unique_id=1392401114]
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="Node3D4" type="Node3D" parent="Lights" unique_id=33830037]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.309752, 1.1763794)
+script = ExtResource("8_jsk3o")
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lights/Node3D4" unique_id=1256688299]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights/Node3D4" unique_id=2142486874]
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="Node3D5" type="Node3D" parent="Lights" unique_id=1279042600]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7441231, 0.309752, 1.0388646)
+script = ExtResource("8_jsk3o")
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lights/Node3D5" unique_id=1101195718]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights/Node3D5" unique_id=262741976]
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="Node3D6" type="Node3D" parent="Lights" unique_id=570630574]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2144318, 0.309752, 0.5649698)
+script = ExtResource("8_jsk3o")
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lights/Node3D6" unique_id=183459574]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights/Node3D6" unique_id=315445581]
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="Node3D7" type="Node3D" parent="Lights" unique_id=158566508]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6517569, 0.309752, 1.3526378)
+script = ExtResource("8_jsk3o")
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="Lights/Node3D7" unique_id=278291092]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 0, 0)
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="Lights/Node3D7" unique_id=1586175271]
+light_color = Color(1, 0, 0, 1)
+shadow_enabled = true
