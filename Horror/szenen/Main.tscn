@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://feqgy2648kv5"]
 
 [ext_resource type="PackedScene" uid="uid://r5t1m0vymjf" path="res://Horror/szenen/flat.tscn" id="1_8vsp3"]
+[ext_resource type="PackedScene" uid="uid://bwhfs5hm545ss" path="res://Horror/player_horror.tscn" id="2_cilhk"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cilhk"]
-load_path = "res://.godot/imported/plastered_wall_03_disp_1k.png-277a160b265b874b261c050d08b6d4a3.s3tc.ctex"
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u1kt3"]
 albedo_texture = SubResource("CompressedTexture2D_cilhk")
@@ -20,3 +20,6 @@ material_override = SubResource("StandardMaterial3D_u1kt3")
 material = SubResource("StandardMaterial3D_o0vex")
 
 [node name="flat" parent="." unique_id=1479701456 instance=ExtResource("1_8vsp3")]
+
+[node name="PlayerHorror" parent="." unique_id=1002742844 instance=ExtResource("2_cilhk")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 1.6422395, 1.2941557, 2.6444685)

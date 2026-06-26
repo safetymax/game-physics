@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bwhfs5hm545ss"]
 
-[ext_resource type="Script" uid="uid://d36hn6hkrwka4" path="res://player_movement.gd" id="1_b7f5f"]
+[ext_resource type="Script" uid="uid://d36hn6hkrwka4" path="res://Horror/player_movement.gd" id="1_b7f5f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xu2mj"]
 
