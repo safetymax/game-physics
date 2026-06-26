@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dn51rk48ixviw"]
+
+[ext_resource type="PackedScene" uid="uid://3bqlyfljxisv" path="res://Horror/texturenHorror/Cartoon-Anime-4HeadBase.fbx" id="1_3b603"]
+[ext_resource type="Texture2D" uid="uid://8wpxn6l2b5y5" path="res://Horror/texturenHorror/friedrich.png" id="2_sh0tl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fkba7"]
+albedo_color = Color(0.12, 0.12, 0.12, 1)
+
+[node name="Cartoon-Anime-4HeadBase" unique_id=668519801 instance=ExtResource("1_3b603")]
+
+[node name="Torso" parent="." index="0" unique_id=219433454]
+surface_material_override/0 = SubResource("StandardMaterial3D_fkba7")
+
+[node name="Decal" type="Decal" parent="Torso" index="0" unique_id=24296269]
+transform = Transform3D(1.0000005, -8.7422826e-08, -8.7422826e-08, -8.7427594e-08, -1.0000007, 1.4210855e-14, -8.7422805e-08, 1.4210855e-14, -1.0000007, 0.00038719224, -0.008120127, 0.06797323)
+size = Vector3(0.02001709, 0.01, 0.020675048)
+texture_albedo = ExtResource("2_sh0tl")

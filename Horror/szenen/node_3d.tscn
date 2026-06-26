@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://70vo66k0c0fu"]
+
+[ext_resource type="PackedScene" uid="uid://3bqlyfljxisv" path="res://Horror/texturenHorror/Cartoon-Anime-4HeadBase.fbx" id="1_rbwd3"]
+
+[node name="Node3D" type="Node3D" unique_id=965145249]
+
+[node name="Cartoon-Anime-4HeadBase" parent="." unique_id=668519801 instance=ExtResource("1_rbwd3")]
