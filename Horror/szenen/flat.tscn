@@ -2,6 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://dd532qn0llfkh" path="res://Horror/texturenHorror/flat.fbx" id="1_lwtns"]
 [ext_resource type="Texture2D" uid="uid://7tuflv1jv3d" path="res://Horror/texturenHorror/flat_1.png" id="2_e14og"]
+[ext_resource type="Texture2D" uid="uid://obpjkbnrgkt" path="res://Horror/texturenHorror/merzi.png" id="3_e14og"]
+[ext_resource type="Texture2D" uid="uid://smge72pik4bq" path="res://Horror/texturenHorror/Screenshot 2026-06-26 162658.png" id="4_ll0m1"]
+[ext_resource type="Texture2D" uid="uid://blubbgmqw23mv" path="res://Horror/texturenHorror/xxxx.png" id="5_7eekx"]
+[ext_resource type="Texture2D" uid="uid://geme068n82ar" path="res://Horror/texturenHorror/xxxxxx.png" id="6_06iij"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ll0m1"]
 albedo_texture = ExtResource("2_e14og")
@@ -256,7 +260,7 @@ albedo_texture = ExtResource("2_e14og")
 albedo_texture = ExtResource("2_e14og")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nc53r"]
-albedo_texture = ExtResource("2_e14og")
+albedo_texture = ExtResource("3_e14og")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_52xw2"]
 albedo_texture = ExtResource("2_e14og")
@@ -568,14 +572,35 @@ surface_material_override/0 = SubResource("StandardMaterial3D_qb27k")
 [node name="pillow_3" parent="." index="69" unique_id=952597854]
 surface_material_override/0 = SubResource("StandardMaterial3D_vvt24")
 
+[node name="Decal3" type="Decal" parent="pillow_3" index="0" unique_id=172684912]
+transform = Transform3D(-1.088821e-17, 0.0019921686, 0.00017684855, 0.0020000094, 2.7694147e-10, -4.6583015e-12, 2.0641655e-11, 0.0001768469, -0.0019921735, 0.0023485934, -0.0002566669, 0.0017115432)
+size = Vector3(5.032898, 4.618103, 4.8504944)
+texture_albedo = ExtResource("4_ll0m1")
+
 [node name="pillow_4" parent="." index="70" unique_id=1639570210]
+transform = Transform3D(100, 0, 0, 0, -1.1920929e-05, 99.99999, 0, -99.99999, -1.1920929e-05, 0.4546437, 0.59260464, -3.825202)
 surface_material_override/0 = SubResource("StandardMaterial3D_nc53r")
+
+[node name="Decal" type="Decal" parent="pillow_4" index="0" unique_id=2114069520]
+transform = Transform3D(7.372813e-11, 0.0019967682, -0.00011369691, 0.0020000096, -7.386991e-11, -3.855527e-13, -4.584305e-12, -0.00011369775, -0.001996774, 0.002348592, -0.00061550736, 0.0017115409)
+size = Vector3(5.032898, 4.618103, 4.8504944)
+texture_albedo = ExtResource("3_e14og")
 
 [node name="pillow_5" parent="." index="71" unique_id=895020228]
 surface_material_override/0 = SubResource("StandardMaterial3D_52xw2")
 
+[node name="Decal2" type="Decal" parent="pillow_5" index="0" unique_id=626948181]
+transform = Transform3D(0.00019804429, 0.0015520083, 0.0012458204, 0.0018833999, -0.0005507335, 0.00038669578, 0.0006431352, 0.0011348677, -0.0015160571, 0.0008629877, 0.00052407756, 0.00044855196)
+size = Vector3(3.6390839, 4.618103, 3.3305435)
+texture_albedo = ExtResource("5_7eekx")
+
 [node name="pillow_6" parent="." index="72" unique_id=599191496]
 surface_material_override/0 = SubResource("StandardMaterial3D_wa2ur")
+
+[node name="Decal3" type="Decal" parent="pillow_6" index="0" unique_id=1720105150]
+transform = Transform3D(0.0019922266, -0.00017448339, 2.5267085e-05, -0.00012216443, -0.0015728957, -0.0012292669, 0.0001271109, 0.0012229147, -0.0015774352, -0.00020282343, -0.0011417493, 0.0008373568)
+size = Vector3(3.6390839, 4.618103, 3.3305435)
+texture_albedo = ExtResource("6_06iij")
 
 [node name="pillow_7" parent="." index="73" unique_id=1153397980]
 surface_material_override/0 = SubResource("StandardMaterial3D_gnq2o")
