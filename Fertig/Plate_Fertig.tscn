@@ -1,7 +1,8 @@
 [gd_scene format=3 uid="uid://b21ugy8km8kip"]
 
-[ext_resource type="PackedScene" uid="uid://bim4bbcscsc6o" path="res://Objekte_Levelnew folder/1plate.tscn" id="1_ugl0g"]
+[ext_resource type="PackedScene" uid="uid://bim4bbcscsc6o" path="res://Fertig/Objekte_Levelnew folder/1plate.tscn" id="1_ugl0g"]
 [ext_resource type="Script" uid="uid://ckt0fba7qys3r" path="res://Fertig/plate.gd" id="2_5n3ns"]
+
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_ugl0g"]
 height = 0.2808838

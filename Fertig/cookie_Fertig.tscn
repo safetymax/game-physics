@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://doc8bpbvtpii8"]
 
-[ext_resource type="PackedScene" uid="uid://bnfihmsvkwg7v" path="res://Objekte_Levelnew folder/1cookie.tscn" id="1_o1fak"]
+[ext_resource type="PackedScene" uid="uid://bnfihmsvkwg7v" path="res://Fertig/Objekte_Levelnew folder/1cookie.tscn" id="1_o1fak"]
+
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_jcvd4"]
 height = 1.3617401

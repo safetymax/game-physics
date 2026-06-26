@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bn3vfpulpwo7r"]
+
+[ext_resource type="PackedScene" uid="uid://bdxo8ouaxbsso" path="res://Fertig/Texturen/gate-door.fbx" id="1_04vcc"]
+[ext_resource type="Texture2D" uid="uid://blaweyy2gnjxs" path="res://Fertig/Texturen/colormap_Wall.png" id="2_xoq8s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4tdpj"]
+albedo_texture = ExtResource("2_xoq8s")
+
+[node name="gate-door" unique_id=1225409445 instance=ExtResource("1_04vcc")]
+
+[node name="gate-door" parent="." index="0" unique_id=1462607653]
+surface_material_override/0 = SubResource("StandardMaterial3D_4tdpj")
