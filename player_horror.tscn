@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bwhfs5hm545ss"]
+
+[ext_resource type="Script" uid="uid://d36hn6hkrwka4" path="res://player_movement.gd" id="1_b7f5f"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_xu2mj"]
+
+[node name="PlayerHorror" type="CharacterBody3D" unique_id=1002742844]
+script = ExtResource("1_b7f5f")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=381935677]
+
+[node name="Camera3D" type="Camera3D" parent="CSGCylinder3D" unique_id=573441283]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.69904613, 0.33549845)
+fov = 60.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=317153070]
+shape = SubResource("CapsuleShape3D_xu2mj")
+
+[node name="CSGCylinder3D2" type="CSGCylinder3D" parent="." unique_id=1862185128]
+transform = Transform3D(0.19999415, 0.0015099812, -0.00023072725, -3.6999465e-10, 0.030209668, 0.1977053, 0.0015275106, -0.19769952, 0.030208787, 0.28579903, 0.31953835, -0.4099803)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="CSGCylinder3D2" unique_id=1250244611]
+transform = Transform3D(4.9786687, 0.04957723, 0.4587067, 0.4488216, 0.6314242, -4.939623, -0.106906235, 4.959722, 0.6242801, 0, 0, 0)
+light_color = Color(0.9964965, 1, 0.79566145, 1)
+shadow_enabled = true
