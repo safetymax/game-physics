@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://c635bxjbb0nyo"]
+
+[ext_resource type="PackedScene" uid="uid://bwhfs5hm545ss" path="res://Horror/player_horror.tscn" id="1_88gup"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xu2mj"]
+size = Vector3(7.2038574, 1, 7.690796)
+
+[node name="Node3D" type="Node3D" unique_id=310973834]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1312042461]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6687927, -0.32592773, -2.067047)
+size = Vector3(6.735779, 0.34814453, 7.8550415)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="CSGBox3D" unique_id=1386269930]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CSGBox3D/StaticBody3D" unique_id=1041467400]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052368164, 0, -0.22735596)
+shape = SubResource("BoxShape3D_xu2mj")
+
+[node name="PlayerHorror" parent="." unique_id=1002742844 instance=ExtResource("1_88gup")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6687927, 1.2199066, -2.067047)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=507748543]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4.4142027)
+light_energy = 0.366
+shadow_enabled = true
